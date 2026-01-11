@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سدد مديونيتك بالكامل</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>سدد مديونيتك بالكامل</h1>
+        <p class="subtitle">سجّل بياناتك وسيتم التواصل معك خلال 24 ساعة</p>
+
+        <form id="orderForm" onsubmit="return submitForm(event)">
+            <input type="text" id="name" placeholder="الاسم الكامل" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <input type="tel" id="phone" placeholder="رقم الجوال" required>
+            <input type="text" id="city" placeholder="المدينة">
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
